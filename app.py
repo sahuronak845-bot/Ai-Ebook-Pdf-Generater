@@ -12,7 +12,7 @@ api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    model = genai.GenerativeModel('gemini-pro')
     topic = st.text_input("अपना टॉपिक या प्रॉम्प्ट यहाँ लिखें:")
 
     if st.button("Generate Content & PDF"):
